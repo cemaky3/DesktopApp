@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" style="-fx-background-color: #2C2C2C;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="field1" layoutX="14.0" layoutY="436.0" prefHeight="50.0" prefWidth="165.0" style="-fx-border-color: #7F7F7F; -fx-border-radius: 5; -fx-background-color: #BCBCBC; -fx-background-radius: 5;" />
+      <TextField fx:id="field2" layoutX="218.0" layoutY="436.0" prefHeight="50.0" prefWidth="165.0" style="-fx-border-color: #7F7F7F; -fx-border-radius: 5; -fx-background-color: #BCBCBC; -fx-background-radius: 5;" />
+      <Button fx:id="minus" layoutX="14.0" layoutY="338.0" mnemonicParsing="false" onAction="#startM" prefHeight="80.0" prefWidth="78.0" style="-fx-background-radius: 10; -fx-background-color: #7F7F7F;" text="-">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Button fx:id="div" layoutX="219.0" layoutY="338.0" mnemonicParsing="false" onAction="#startD" prefHeight="80.0" prefWidth="78.0" style="-fx-background-radius: 10; -fx-background-color: #7F7F7F;" text="/">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="plus" layoutX="103.0" layoutY="338.0" mnemonicParsing="false" onAction="#startP" prefHeight="80.0" prefWidth="78.0" style="-fx-background-radius: 10; -fx-background-color: #7F7F7F;" text="+">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="mult" layoutX="308.0" layoutY="338.0" mnemonicParsing="false" onAction="#startMult" prefHeight="80.0" prefWidth="78.0" style="-fx-background-radius: 10; -fx-background-color: #7F7F7F;" text="*">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Separator layoutY="117.0" prefHeight="11.0" prefWidth="437.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <Blend mode="DARKEN" />
+         </effect></Separator>
+      <Label fx:id="label" alignment="BASELINE_CENTER" layoutX="15.0" layoutY="25.0" prefHeight="93.0" prefWidth="370.0" style="-fx-background-color: #BCBCBC; -fx-border-color: #151515;" text="Введите число" textFill="#262826">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="sqrt" layoutX="14.0" layoutY="250.0" mnemonicParsing="false" onAction="#startSqrt" prefHeight="80.0" prefWidth="78.0" style="-fx-background-radius: 10; -fx-background-color: #7F7F7F;" text="√">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Button fx:id="fact" layoutX="103.0" layoutY="250.0" mnemonicParsing="false" onAction="#startFact" prefHeight="80.0" prefWidth="78.0" style="-fx-background-radius: 10; -fx-background-color: #7F7F7F;" text="!">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Button fx:id="deg" layoutX="219.0" layoutY="250.0" mnemonicParsing="false" onAction="#startDeg" prefHeight="80.0" prefWidth="78.0" style="-fx-background-radius: 10; -fx-background-color: #7F7F7F;" text="^">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Button fx:id="rev" layoutX="308.0" layoutY="250.0" mnemonicParsing="false" onAction="#startRev" prefHeight="80.0" prefWidth="78.0" style="-fx-background-radius: 10; -fx-background-color: #7F7F7F;" text="1/x">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
